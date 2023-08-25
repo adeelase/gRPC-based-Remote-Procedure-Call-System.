@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ParallelSum;
+
+service ParallelSum {
+	
+	rpc ReturnSum (ARR1) returns (ARR2);
+
+	
+}
+
+message ARR1 {
+  string arr1 = 1;
+  string arr2 = 2;
+}
+
+message ARR2 {
+  string message = 1;
+}
